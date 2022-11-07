@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="idRVItems" type="id" />
+
+    <item name="idRVItems1" type="id">idRVItems</item>
+    <item name="idItems" type="id" />
+    <item name="idItems1" type="id">45</item>
+    <item name="idRVItems3" type="id">idrvitems</item>
+    <item name="idFABAdd" type="id">idFABAdd</item>
+</resources>

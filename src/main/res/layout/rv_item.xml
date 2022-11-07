@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp"
+    android:background="#64B5F6">
+<RelativeLayout
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#64B5F6"
+    >
+
+    <LinearLayout
+        android:id="@+id/idLL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+
+        <!-- To display item name in recycler view -->
+        <TextView
+            android:id="@+id/idTVItemName"
+            android:layout_width="0 dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:margin="3dp"
+
+
+            android:text="itemName"
+            android:textColor="@color/white"
+
+
+            tools:ignore="HardcodedText,Suspicious0dp" />
+
+        <!-- To display item quantity -->
+        <TextView
+            android:id="@+id/idTVQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            android:text="Quantity"
+            android:textColor="@color/white"
+            android:padding="4dp"
+            android:margin="3dp"
+
+
+           />
+
+        <!-- To display item price -->
+        <TextView
+            android:id="@+id/idTVRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+
+
+            android:text="Rate"
+            android:textColor="@color/white"
+            android:padding="4dp"
+            android:margin="3dp" />
+
+
+        <!-- This button is used to delete grocery item -->
+        <ImageButton
+            android:id="@+id/idTVDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:margin="3dp"
+            android:padding="4dp"
+            android:layout_weight="0.5"
+
+            app:tint="@color/white"
+
+            android:background="@color/black"
+            android:src="@drawable/ic_delete"
+             />
+
+        <!-- To display total cost of grocery items -->
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/idIVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLL1"
+        android:layout_toLeftOf="@id/idTVTotalAmt"
+        android:margin="3dp"
+        android:padding="4dp"
+        android:text="Total cost"
+        android:textColor="@color/white"
+
+        />
+    <TextView
+        android:id="@+id/idTVTotalAmt"
+        android:layout_width="wrap_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLL1"
+        android:margin="3dp"
+        android:padding="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:text="Amt"
+        android:textColor="@color/white"
+
+        />
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
